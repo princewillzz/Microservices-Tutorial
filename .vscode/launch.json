@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MovieCatalogServiceApplication<movie-catalog-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.moviecatalogservice.MovieCatalogServiceApplication",
+            "projectName": "movie-catalog-service",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MovieInfoServiceApplication<movie-info-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.movieinfoservice.MovieInfoServiceApplication",
+            "projectName": "movie-info-service",
+            "args": ""
+        }
+    ]
+}
