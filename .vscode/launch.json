@@ -19,6 +19,26 @@
             "mainClass": "com.example.movieinfoservice.MovieInfoServiceApplication",
             "projectName": "movie-info-service",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DiscoveryServerApplication<discovery-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.discoveryserver.DiscoveryServerApplication",
+            "projectName": "discovery-server",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RatingsDataServiceApplication<ratings-data-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.ratingsdataservice.RatingsDataServiceApplication",
+            "projectName": "ratings-data-service",
+            "args": ""
         }
     ]
 }

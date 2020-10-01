@@ -6,6 +6,8 @@ import java.util.List;
 import com.example.ratingsdataservice.models.Rating;
 import com.example.ratingsdataservice.models.Userrating;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,8 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/ratingsdata")
 public class RatingsResource {
 
+    Logger logger = LoggerFactory.getLogger(RatingsResource.class);
+
     @RequestMapping("/{movieId}")
     public Rating getRating(@PathVariable("movieId") String movieId) {
+        String msg = "Movie: " + movieId + " rating given";
+
+        logger.error(msg);
+
         return new Rating(movieId, 90);
     }
 
